@@ -1,913 +1,521 @@
-<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><title>&lt;!DOCTYPE html&gt;</title></head><body><p dir="ltr">&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="en"&gt;<br>
-&lt;head&gt;<br>
-&lt;meta charset="UTF-8" /&gt;<br>
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;<br>
-&lt;title&gt;Login Form&lt;/title&gt;<br>
-&lt;/head&gt;<br>
-&lt;style&gt;<br>
-.container {<br>
-background-color: white;<br>
-background-size: cover;<br>
-width: 100%;<br>
-height: 100%;<br>
-}<br>
-.login {<br>
-justify-content: left;<br>
-align-items: center;<br>
-display: flex;<br>
-margin-top: 16px;<br>
-}<br>
-#Lg {<br>
-padding-top: 8px;<br>
-padding-bottom: 8px;<br>
-width: 90px;<br>
-text-align: center;<br>
-background-color: rgb(30, 30, 187);<br>
-color: white;<br>
-}<br>
-#myCanvas {<br>
-background-color: none;<br>
-margin-top: 50px;<br>
-}<br>
-p {<br>
-color: grey;<br>
-font-family: arial;<br>
-font-size: 1%;<br>
-font-weight: lite;<br>
-text-align: left;<br>
-}<br>
-p1 {<br>
-color: black;<br>
-font-family: arial;<br>
-font-size: 20%;<br>
-font-weight: bolder;<br>
-text-align: center;<br>
-} <br>
-&lt;/style&gt;<br>
-&lt;body&gt;<br>
-&lt;div class="container"&gt;<br>
-&lt;br&gt;&lt;/br&gt;<br>
-&lt;script&gt;<br>
-window.onload = function () {<br>
-var canvas = document.getElementById ("myCanvas") ;<br>
-var context = canvas.getContext ("2d") ;</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (30, 110);<br>
-context.lineTo (30, 315);<br>
-context.moveTo (54, 130);<br>
-context.lineTo (54, 315);<br>
-context.moveTo (30, 110);<br>
-context.lineTo (200, 110);<br>
-context.moveTo (30, 130);<br>
-context.lineTo (200, 130);<br>
-context.moveTo (200, 110);<br>
-context.lineTo (200, 315);<br>
-context.moveTo (30, 315);<br>
-context.lineTo (200, 315);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (30, 438);<br>
-context.lineTo (30, 500);<br>
-context.moveTo (30, 438);<br>
-context.lineTo (210, 438);<br>
-context.moveTo (210, 438);<br>
-context.lineTo (210, 500);<br>
-context.moveTo (30, 500);<br>
-context.lineTo (210, 500);<br>
-context.moveTo (30, 458);<br>
-context.lineTo (210, 458);<br>
-context.moveTo (90, 458);<br>
-context.lineTo (90, 500);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (115, 315);<br>
-context.lineTo (115, 438);<br>
-context.moveTo (100, 438);<br>
-context.lineTo (115, 423);<br>
-context.lineTo (130, 438);<br>
-context.moveTo (100, 330);<br>
-context.lineTo (130, 330);<br>
-context.moveTo (100, 335);<br>
-context.lineTo (130, 335);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (115, 413, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (358, 488);<br>
-context.lineTo (358, 670);<br>
-context.moveTo (358, 488);<br>
-context.lineTo (520, 488);<br>
-context.moveTo (358, 508);<br>
-context.lineTo (520, 508);<br>
-context.moveTo (382, 508);<br>
-context.lineTo (382, 670);<br>
-context.moveTo (520, 488);<br>
-context.lineTo (520, 670);<br>
-context.moveTo (358, 670);<br>
-context.lineTo (520, 670);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (358, 530);<br>
-context.lineTo (300, 530);<br>
-context.lineTo (300, 469);<br>
-context.lineTo (210, 469);<br>
-context.moveTo (210, 454);<br>
-context.lineTo (225, 469);<br>
-context.lineTo (210, 484);<br>
-context.moveTo (343, 545);<br>
-context.lineTo (343, 515);<br>
-context.moveTo (338, 545);<br>
-context.lineTo (338, 515);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (235, 469, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (400, 488);<br>
-context.lineTo (400, 455);<br>
-context.lineTo (329, 455);<br>
-context.lineTo (329, 172);<br>
-context.moveTo (314, 172);<br>
-context.lineTo (329, 187);<br>
-context.lineTo (344, 172);<br>
-context.moveTo (385, 473);<br>
-context.lineTo (415, 473);<br>
-context.moveTo (385, 468);<br>
-context.lineTo (415, 468);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (329, 197, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.stroke ();<br>
-context.beginPath () ;<br>
-context.moveTo (230, 172);<br>
-context.lineTo (428, 172);<br>
-context.moveTo (230, 172);<br>
-context.lineTo (230, 110);<br>
-context.moveTo (428, 172);<br>
-context.lineTo (428, 110);<br>
-context.moveTo (230, 110);<br>
-context.lineTo (428, 110);<br>
-context.moveTo (230, 130);<br>
-context.lineTo (428, 130);<br>
-context.moveTo (290, 130);<br>
-context.lineTo (290, 172);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "Black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (621, 315);<br>
-context.lineTo (621, 110);<br>
-context.moveTo (791, 315);<br>
-context.lineTo (791, 110);<br>
-context.moveTo (621, 110);<br>
-context.lineTo (791, 110);<br>
-context.moveTo (621, 315);<br>
-context.lineTo (791, 315);<br>
-context.moveTo (645, 130);<br>
-context.lineTo (645, 315);<br>
-context.moveTo (621, 130);<br>
-context.lineTo (791, 130);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "Black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (428, 141);<br>
-context.lineTo (550, 141);<br>
-context.lineTo (550, 190);<br>
-context.lineTo (621, 190);<br>
-context.moveTo (428, 156);<br>
-context.lineTo (443, 141);<br>
-context.lineTo (428, 126);<br>
-context.moveTo (606, 175);<br>
-context.lineTo (606, 205);<br>
-context.moveTo (611, 175);<br>
-context.lineTo (611, 205);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (453, 141, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (681, 405);<br>
-context.lineTo (681, 473);<br>
-context.moveTo (681, 405);<br>
-context.lineTo (835, 405);<br>
-context.moveTo (681, 425);<br>
-context.lineTo (835, 425);<br>
-context.moveTo (705, 425);<br>
-context.lineTo (705, 473);<br>
-context.moveTo (681, 473);<br>
-context.lineTo (835, 473);<br>
-context.moveTo (835, 405);<br>
-context.lineTo (835, 473);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (520, 530);<br>
-context.lineTo (758, 530);<br>
-context.lineTo (758, 473);<br>
-context.moveTo (520, 515);<br>
-context.lineTo (535, 530);<br>
-context.lineTo (520, 545);<br>
-context.moveTo (773, 488);<br>
-context.lineTo (743, 488);<br>
-context.moveTo (773, 493);<br>
-context.lineTo (743, 493);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (545, 530, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (982, 405);<br>
-context.lineTo (982, 475);<br>
-context.moveTo (982, 405);<br>
-context.lineTo (1138, 405);<br>
-context.moveTo (1138, 425);<br>
-context.lineTo (982, 425);<br>
-context.moveTo (1042, 425);<br>
-context.lineTo (1042, 475);<br>
-context.moveTo (1138, 475);<br>
-context.lineTo (1138, 405);<br>
-context.moveTo (982, 475);<br>
-context.lineTo (1138, 475);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (835, 440);<br>
-context.lineTo (982, 440);<br>
-context.moveTo (982, 455);<br>
-context.lineTo (967, 440);<br>
-context.lineTo (982, 425);<br>
-context.moveTo (850, 455);<br>
-context.lineTo (850, 425);<br>
-context.moveTo (855, 455);<br>
-context.lineTo (855, 425);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (957, 440, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1285, 395);<br>
-context.lineTo (1285, 482);<br>
-context.moveTo (1285, 395);<br>
-context.lineTo (1450, 395);<br>
-context.moveTo (1285, 415);<br>
-context.lineTo (1450, 415);<br>
-context.moveTo (1309, 415);<br>
-context.lineTo (1309, 482);<br>
-context.moveTo (1285, 482);<br>
-context.lineTo (1450, 482);<br>
-context.moveTo (1450, 482);<br>
-context.lineTo (1450, 395);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1285, 439);<br>
-context.lineTo (1138, 439);<br>
-context.moveTo (1138, 424);<br>
-context.lineTo (1153, 439);<br>
-context.lineTo (1138, 454);<br>
-context.moveTo (1270, 454);<br>
-context.lineTo (1270, 424);<br>
-context.moveTo (1265, 454);<br>
-context.lineTo (1265, 424);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (1163, 439, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (951, 110);<br>
-context.lineTo (951, 168);<br>
-context.moveTo (951, 110);<br>
-context.lineTo (1115, 110);<br>
-context.moveTo (951, 130);<br>
-context.lineTo (1115, 130);<br>
-context.moveTo (951, 168);<br>
-context.lineTo (1115, 168);<br>
-context.moveTo (1011, 130);<br>
-context.lineTo (1011, 168);<br>
-context.moveTo (1115, 168);<br>
-context.lineTo (1115, 110);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (951, 139);<br>
-context.lineTo (791, 139);<br>
-context.moveTo (951, 124);<br>
-context.lineTo (936, 139);<br>
-context.lineTo (951, 154);<br>
-context.moveTo (806, 154);<br>
-context.lineTo (806, 124);<br>
-context.moveTo (811, 154);<br>
-context.lineTo (811, 124);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (926, 139, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1280, 110);<br>
-context.lineTo (1280, 237);<br>
-context.moveTo (1280, 110);<br>
-context.lineTo (1450, 110);<br>
-context.moveTo (1280, 130);<br>
-context.lineTo (1450, 130);<br>
-context.moveTo (1304, 130);<br>
-context.lineTo (1304, 237);<br>
-context.moveTo (1450, 110);<br>
-context.lineTo (1450, 237);<br>
-context.moveTo (1450, 237);<br>
-context.lineTo (1280, 237);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1115, 139);<br>
-context.lineTo (1280, 139);<br>
-context.moveTo (1115, 124);<br>
-context.lineTo (1130, 139);<br>
-context.lineTo (1115, 154);<br>
-context.moveTo (1265, 154);<br>
-context.lineTo (1265, 124);<br>
-context.moveTo (1260, 154);<br>
-context.lineTo (1260, 124);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (1140, 139, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (951, 210);<br>
-context.lineTo (951, 268);<br>
-context.moveTo (951, 210);<br>
-context.lineTo (1115, 210);<br>
-context.moveTo (951, 230);<br>
-context.lineTo (1115, 230);<br>
-context.moveTo (951, 268);<br>
-context.lineTo (1115, 268);<br>
-context.moveTo (1011, 230);<br>
-context.lineTo (1011, 268);<br>
-context.moveTo (1115, 268);<br>
-context.lineTo (1115, 210);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1280, 202);<br>
-context.lineTo (1198, 202);<br>
-context.lineTo (1198, 242);<br>
-context.lineTo (1115, 242);<br>
-context.moveTo (1115, 227);<br>
-context.lineTo (1130, 242);<br>
-context.lineTo (1115, 257);<br>
-context.moveTo (1265, 217);<br>
-context.lineTo (1265, 187);<br>
-context.moveTo (1260, 217);<br>
-context.lineTo (1260, 187);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (1140, 242, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1033, 268);<br>
-context.lineTo (1033, 330);<br>
-context.lineTo (1368, 330);<br>
-context.lineTo (1368, 395);<br>
-context.moveTo (1018, 268);<br>
-context.lineTo (1033, 283);<br>
-context.lineTo (1048, 268);<br>
-context.moveTo (1383, 380);<br>
-context.lineTo (1353, 380);<br>
-context.moveTo (1383, 375);<br>
-context.lineTo (1353, 375);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (1033, 293, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (951, 210);<br>
-context.lineTo (951, 268);<br>
-context.moveTo (951, 210);<br>
-context.lineTo (1115, 210);<br>
-context.moveTo (951, 230);<br>
-context.lineTo (1115, 230);<br>
-context.moveTo (951, 268);<br>
-context.lineTo (1115, 268);<br>
-context.moveTo (1011, 230);<br>
-context.lineTo (1011, 268);<br>
-context.moveTo (1115, 268);<br>
-context.lineTo (1115, 210);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (681, 550);<br>
-context.lineTo (681, 612);<br>
-context.moveTo (681, 612);<br>
-context.lineTo (845, 612);<br>
-context.moveTo (741, 570);<br>
-context.lineTo (741, 612);<br>
-context.moveTo (681, 570);<br>
-context.lineTo (845, 570);<br>
-context.moveTo (681, 550);<br>
-context.lineTo (845, 550);<br>
-context.moveTo (845, 550);<br>
-context.lineTo (845, 612);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (520, 581);<br>
-context.lineTo (681, 581);<br>
-context.moveTo (681, 566);<br>
-context.lineTo (666, 581);<br>
-context.lineTo (681, 596);<br>
-context.moveTo (535, 566);<br>
-context.lineTo (535, 596);<br>
-context.moveTo (540, 566);<br>
-context.lineTo (540, 596);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (656, 581, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1000, 550);<br>
-context.lineTo (1000, 697);<br>
-context.moveTo (1000, 550);<br>
-context.lineTo (1155, 550);<br>
-context.moveTo (1000, 570);<br>
-context.lineTo (1155, 570);<br>
-context.moveTo (1024, 570);<br>
-context.lineTo (1024, 697);<br>
-context.moveTo (1000, 697);<br>
-context.lineTo (1155, 697);<br>
-context.moveTo (1155, 697);<br>
-context.lineTo (1155, 550);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (845, 581);<br>
-context.lineTo (1000, 581);<br>
-context.moveTo (845, 566);<br>
-context.lineTo (860, 581);<br>
-context.lineTo (845, 596);<br>
-context.moveTo (985, 566);<br>
-context.lineTo (985, 596);<br>
-context.moveTo (980, 566);<br>
-context.lineTo (980, 596);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (870, 581, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1155, 642);<br>
-context.lineTo (1325, 642);<br>
-context.lineTo (1325, 482);<br>
-context.moveTo (1155, 627);<br>
-context.lineTo (1170, 642);<br>
-context.lineTo (1155, 657);<br>
-context.moveTo (1175, 627);<br>
-context.lineTo (1175, 657);<br>
-context.moveTo (1310, 497);<br>
-context.lineTo (1340, 497);<br>
-context.moveTo (1310, 502);<br>
-context.lineTo (1340, 502);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (600, 800);<br>
-context.lineTo (600, 927);<br>
-context.moveTo (600, 800);<br>
-context.lineTo (770, 800);<br>
-context.moveTo (600, 820);<br>
-context.lineTo (770, 820);<br>
-context.moveTo (770, 800);<br>
-context.lineTo (770, 927);<br>
-context.moveTo (624, 820);<br>
-context.lineTo (624, 927);<br>
-context.moveTo (600, 927);<br>
-context.lineTo (770, 927);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (439, 670);<br>
-context.lineTo (439, 864);<br>
-context.lineTo (600, 864);<br>
-context.moveTo (424, 670);<br>
-context.lineTo (439, 685);<br>
-context.lineTo (454, 670);<br>
-context.moveTo (585, 849);<br>
-context.lineTo (585, 879);<br>
-context.moveTo (580, 849);<br>
-context.lineTo (580, 879);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (439, 695, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (770, 892);<br>
-context.lineTo (1428, 892);<br>
-context.lineTo (1428, 482);<br>
-context.moveTo (770, 877);<br>
-context.lineTo (795, 892);<br>
-context.lineTo (770, 907);<br>
-context.moveTo (805, 877);<br>
-context.lineTo (805, 907);<br>
-context.moveTo (1443, 497);<br>
-context.lineTo (1413, 497);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (1428, 512, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (681, 750);<br>
-context.lineTo (681, 688);<br>
-context.moveTo (681, 688);<br>
-context.lineTo (845, 688);<br>
-context.moveTo (741, 708);<br>
-context.lineTo (741, 750);<br>
-context.moveTo (681, 708);<br>
-context.lineTo (845, 708);<br>
-context.moveTo (681, 750);<br>
-context.lineTo (845, 750);<br>
-context.moveTo (845, 750);<br>
-context.lineTo (845, 688);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (500, 670);<br>
-context.lineTo (500, 719);<br>
-context.lineTo (681, 719);<br>
-context.moveTo (681, 704);<br>
-context.lineTo (666, 719);<br>
-context.lineTo (681, 734);<br>
-context.moveTo (515, 685);<br>
-context.lineTo (485, 685);<br>
-context.moveTo (515, 690);<br>
-context.lineTo (485, 690);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (656, 719, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1000, 750);<br>
-context.lineTo (1000, 830);<br>
-context.moveTo (1000, 750);<br>
-context.lineTo (1155, 750);<br>
-context.moveTo (1000, 770);<br>
-context.lineTo (1155, 770);<br>
-context.moveTo (1024, 770);<br>
-context.lineTo (1024, 830);<br>
-context.moveTo (1000, 830);<br>
-context.lineTo (1155, 830);<br>
-context.moveTo (1155, 830);<br>
-context.lineTo (1155, 750);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1000, 790);<br>
-context.lineTo (763, 790);<br>
-context.lineTo (763, 750);<br>
-context.moveTo (748, 750);<br>
-context.lineTo (763, 765);<br>
-context.lineTo (778, 750);<br>
-context.moveTo (985, 805);<br>
-context.lineTo (985, 775);<br>
-context.moveTo (980, 805);<br>
-context.lineTo (980, 775);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (763, 775, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (1155, 790);<br>
-context.lineTo (1368, 790);<br>
-context.lineTo (1368, 482);<br>
-context.moveTo (1155, 775);<br>
-context.lineTo (1170, 790);<br>
-context.lineTo (1155, 805);<br>
-context.moveTo (1383, 497);<br>
-context.lineTo (1353, 497);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (1180, 790, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (1368, 512, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (30, 580);<br>
-context.lineTo (30, 785);<br>
-context.moveTo (54, 600);<br>
-context.lineTo (54, 785);<br>
-context.moveTo (30, 580);<br>
-context.lineTo (210, 580);<br>
-context.moveTo (30, 600);<br>
-context.lineTo (210, 600);<br>
-context.moveTo (210, 580);<br>
-context.lineTo (210, 785);<br>
-context.moveTo (30, 785);<br>
-context.lineTo (210, 785);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (358, 620);<br>
-context.lineTo (210, 620);<br>
-context.moveTo (358, 605);<br>
-context.lineTo (343, 620);<br>
-context.lineTo (358, 635);<br>
-context.moveTo (338, 605);<br>
-context.lineTo (338, 635);<br>
-context.moveTo (225, 605);<br>
-context.lineTo (225, 635);<br>
-context.moveTo (230, 605);<br>
-context.lineTo (230, 635);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.stroke ();<br>
-context.beginPath () ;<br>
-context.moveTo (400, 220);<br>
-context.lineTo (400, 360);<br>
-context.moveTo (400, 240);<br>
-context.lineTo (555, 240);<br>
-context.moveTo (400, 220);<br>
-context.lineTo (555, 220);<br>
-context.moveTo (424, 240);<br>
-context.lineTo (424, 360);<br>
-context.moveTo (555, 220);<br>
-context.lineTo (555, 360);<br>
-context.moveTo (400, 360);<br>
-context.lineTo (555, 360);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "Black" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (555, 332);<br>
-context.lineTo (759, 332);<br>
-context.lineTo (759, 405);<br>
-context.moveTo (555, 317);<br>
-context.lineTo (570, 332);<br>
-context.lineTo (555, 347);<br>
-context.moveTo (575, 317);<br>
-context.lineTo (575, 347);<br>
-context.moveTo (774, 390);<br>
-context.lineTo (744, 390);<br>
-context.moveTo (774, 385);<br>
-context.lineTo (744, 385);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.moveTo (478, 360);<br>
-context.lineTo (478, 488);<br>
-context.moveTo (493, 488);<br>
-context.lineTo (478, 473);<br>
-context.lineTo (463, 488);<br>
-context.moveTo (463, 375);<br>
-context.lineTo (493, 375);<br>
-context.moveTo (463, 380);<br>
-context.lineTo (493, 380);<br>
-context.lineWidth = 1 ;<br>
-context.strokeStyle = "blue" ;<br>
-context.stroke ();</p>
-<p dir="ltr">context.beginPath () ;<br>
-context.arc (478, 463, 5, 0, 2*Math.PI);<br>
-context.fillStyle = "white" ;<br>
-context.fill ();<br>
-context.stroke ();</p>
-<p dir="ltr">var can = document.getElementById ("myCanvas") ;<br>
-var cn = can.getContext ("2d") ;<br>
-var grd = cn.createRadialGradient(0,5000,5000,5000,0, 5000);<br>
-grd.addColorStop(0, "black");</p>
-<p dir="ltr">cn.fillStyle=grd;<br>
-cn.font="30px Arial";<br>
-cn.fillText("Western Cape Crime Statistics Entity Relationships Diagrams",300 , 50)</p>
-<p dir="ltr">cn.fillStyle=grd;<br>
-cn.font="12px Arial";<br>
-cn.fillText("witness", 90, 122);<br>
-cn.fillText("PK", 35, 142);<br>
-cn.fillText("wit_id char(14)", 57, 142);<br>
-cn.fillText("wit_fname varchar(20)", 57, 182);<br>
-cn.fillText("wit_sname varchar(20)", 57, 202);<br>
-cn.fillText("wit_gender char(1)", 57, 222);<br>
-cn.fillText("wit_age integer", 57, 242);<br>
-cn.fillText("wit_address varchar(100)", 57, 262);<br>
-cn.fillText("wit_nationality varchar(30)", 57, 282);<br>
-cn.fillText("wit_title varchar(3)",57 , 162);<br>
-cn.fillText("wit_cell tel",57 , 302);</p>
-<p dir="ltr">cn.fillText("ccase_witness", 50, 450)<br>
-cn.fillText("PK1, FK1",35 , 470);<br>
-cn.fillText("PK2, FK2",35 , 490);<br>
-cn.fillText("ccase_id char(14)",95 , 470);<br>
-cn.fillText("wit_id char(14)",95 , 490);</p>
-<p dir="ltr">cn.fillText("ccase", 430, 500)<br>
-cn.fillText("PK",363 , 520);<br>
-cn.fillText("FK",363 , 600);<br>
-cn.fillText("FK",363 , 620);<br>
-cn.fillText("FK",363 , 640);<br>
-cn.fillText("FK",363 , 660);<br>
-cn.fillText("ccase_id char(14)",385 , 520);<br>
-cn.fillText("crime_ctgry varchar(50) ",385 , 540);<br>
-cn.fillText("crime_typ varchar(50)",385 , 560);<br>
-cn.fillText("dor date",385 , 580);<br>
-cn.fillText("ps_id integer",385 , 600);<br>
-cn.fillText("com_id char(14)",385 , 620);<br>
-cn.fillText("pros_id integer",385 , 640);<br>
-cn.fillText("det_id integer",385 , 660);</p>
-<p dir="ltr">cn.fillText("ccase_suspect", 280, 122)<br>
-cn.fillText("PK1, FK1",235 , 144);<br>
-cn.fillText("PK2, FK2",235 ,164);<br>
-cn.fillText("ccase_id char(14)",295 , 144);<br>
-cn.fillText("wit_id char(14)",295 , 164);</p>
-<p dir="ltr">cn.fillText("suspect", 680, 122);<br>
-cn.fillText("PK", 626, 142);<br>
-cn.fillText("sus_id char(14)", 650, 142);<br>
-cn.fillText("sus_fname varchar(20)", 650, 182);<br>
-cn.fillText("sus_sname varchar(20)", 650, 202);<br>
-cn.fillText("sus_gender char(1)", 650, 222);<br>
-cn.fillText("sus_age integer", 650, 242);<br>
-cn.fillText("sus_address varchar(100)", 650, 262);<br>
-cn.fillText("sus_nationality varchar(30)", 650, 282);<br>
-cn.fillText("sus_title varchar(3)",650 , 162);<br>
-cn.fillText("sus_cell tel",650 , 302);</p>
-<p dir="ltr">cn.fillText("police station", 720, 418);<br>
-cn.fillText("PK", 686, 438);<br>
-cn.fillText("ps_id integer", 710, 438);<br>
-cn.fillText("ps_name varchar(50)", 710, 458);</p>
-<p dir="ltr">cn.fillText("police station_court", 1005, 418);<br>
-cn.fillText("PK1, FK1", 987, 438);<br>
-cn.fillText("PK1, FK1", 987, 458);<br>
-cn.fillText("ps_id integer", 1047, 438);<br>
-cn.fillText("court_id integer", 1047, 458);</p>
-<p dir="ltr">cn.fillText("court", 1360, 408);<br>
-cn.fillText("PK", 1290, 427);<br>
-cn.fillText("court_id integer", 1314, 427);<br>
-cn.fillText("court_name varchar(20)", 1314, 447);<br>
-cn.fillText("court_class varchar(20)", 1314, 467);</p>
-<p dir="ltr">cn.fillText("lawyer_suspect", 990, 122);<br>
-cn.fillText("PK1, FK1",956 , 142);<br>
-cn.fillText("PK2, FK2",956 , 162);<br>
-cn.fillText("lwyr_id integer",1016 , 142);<br>
-cn.fillText("sus_id char(14)",1016 , 162);</p>
-<p dir="ltr">cn.fillText("lawyer", 1320, 122);<br>
-cn.fillText("lwyr_id integer",1309 , 142);<br>
-cn.fillText("PK",1286 , 142);<br>
-cn.fillText("lwyr_title varchar(3)",1309 , 162);<br>
-cn.fillText("lwyr_fname varchar(20)",1309 , 182);<br>
-cn.fillText("lwyr_sname varchar(20)",1309 , 202);<br>
-cn.fillText("lwyr_tel tel",1309 , 222);</p>
-<p dir="ltr">cn.fillText("lawyer_court", 990, 222);<br>
-cn.fillText("PK1, FK1",956 , 242);<br>
-cn.fillText("PK2, FK2",956 , 262);<br>
-cn.fillText("lwyr_id integer",1016 , 242);<br>
-cn.fillText("court_id integer",1016 , 262);</p>
-<p dir="ltr">cn.fillText("judge_ccase", 700, 562);<br>
-cn.fillText("PK1, FK1",686 , 582);<br>
-cn.fillText("PK2, FK2",686 , 602);<br>
-cn.fillText("ccase_id char(14)",746 , 602);<br>
-cn.fillText("jud_id integer",746 , 582);</p>
-<p dir="ltr">cn.fillText("judge", 1050, 562);<br>
-cn.fillText("jud_id integer",1029 , 582);<br>
-cn.fillText("PK",1005 , 582);<br>
-cn.fillText("jud_title varchar(3)",1029 , 602);<br>
-cn.fillText("jud_fname varchar(20)",1029 , 622);<br>
-cn.fillText("jud_sname varchar(20)",1029 , 642);<br>
-cn.fillText("c_division char(4)",1029 , 662);<br>
-cn.fillText("court_id integer",1029 , 682);<br>
-cn.fillText("FK",1005 , 682);</p>
-<p dir="ltr">cn.fillText("prosecutor", 612, 812);<br>
-cn.fillText("pros_id integer",629 , 832);<br>
-cn.fillText("PK",605 , 832);<br>
-cn.fillText("pros_title varchar(3)",629 , 852);<br>
-cn.fillText("pros_fname varchar(20)",629 , 872);<br>
-cn.fillText("pros_sname varchar(20)",629 , 892);<br>
-cn.fillText("court_id integer",629 , 912);<br>
-cn.fillText("FK",605 , 912);</p>
-<p dir="ltr">cn.fillText("ccase_judgement", 690, 700);<br>
-cn.fillText("PK1, FK1",686 , 720);<br>
-cn.fillText("PK2, FK2",686 , 740);<br>
-cn.fillText("ccase_id char(14)",746 , 720);<br>
-cn.fillText("jdmnt_id char(14)",746 , 740);</p>
-<p dir="ltr">cn.fillText("judgement", 1050, 762);<br>
-cn.fillText("jdmnt_id char(14)",1029 , 782);<br>
-cn.fillText("PK",1005 , 782);<br>
-cn.fillText("jdmnt_date date",1029 , 802);<br>
-cn.fillText("court_id integer",1029 , 822);<br>
-cn.fillText("FK",1005 , 822);</p>
-<p dir="ltr">cn.fillText("complainant", 90, 592);<br>
-cn.fillText("PK", 35, 612);<br>
-cn.fillText("com_id char(14)", 57, 612);<br>
-cn.fillText("com_fname varchar(20)", 57, 652);<br>
-cn.fillText("com_sname varchar(20)", 57, 672);<br>
-cn.fillText("com_gender char(1)", 57, 692);<br>
-cn.fillText("com_age integer", 57, 712);<br>
-cn.fillText("com_address varchar(100)", 57, 732);<br>
-cn.fillText("com_nationality varchar(30)", 57, 752);<br>
-cn.fillText("com_title varchar(3)",57 , 632);<br>
-cn.fillText("com_cell tel",57 , 772);</p>
-<p dir="ltr">cn.fillText("detective", 450, 232);<br>
-cn.fillText("det_id integer",429 , 252);<br>
-cn.fillText("PK",405 , 252);<br>
-cn.fillText("det_title varchar(3)", 429, 272);<br>
-cn.fillText("det_fname varchar(20)",429 , 292);<br>
-cn.fillText("det_sname varchar(20)", 429, 312);<br>
-cn.fillText("det_tel tel", 429, 332)<br>
-cn.fillText("ps_id integer",429 , 352);<br>
-cn.fillText("FK",405 , 352);<br>
-} ;<br>
-&lt;/script&gt;<br>
-&lt;center&gt;&lt;canvas id="myCanvas" width="1500" height="1000" " style="border: 3px solid black ;"&gt;&lt;/center&gt;&lt;/canvas&gt;<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;</p>
-</body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Police Stations WCPS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css" />
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel='stylesheet' />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.17/leaflet-maplibre-gl.js"></script>
+    <style>
+#map {
+position: absolute; 
+top: 115px; 
+right: 30%; 
+bottom: 51%; 
+left: 10px;
+}
+#cont {
+padding-top: 300px;
+}
+.container {
+background-color: white;
+background-size: cover;
+width: 100%;
+height: 100%;
+}
+.cd {
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 16px;
+}
+#cd {
+padding-top: 0px;
+padding-bottom: 90px;
+width: 80%;
+text-align: left;
+background-color: rgb(255, 20, 255);
+color: rgb(0,0,0);
+border-radius: 2%;
+}
+.tldfd {
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 16px;
+}
+#tldfd {
+padding-top: 0px;
+padding-bottom: 90px;
+width: 80%;
+text-align: left;
+background-color: rgb(20, 255, 255);
+color: rgb(0,0,0);
+border-radius: 2%;
+}
+.lzdfd {
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 16px;
+}
+#lzdfd {
+padding-top: 0px;
+padding-bottom: 90px;
+width: 80%;
+text-align: left;
+background-color: rgb(255, 255, 20);
+color: rgb(0,0,0);
+border-radius: 2%;
+}
+.erd {
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 16px;
+}
+#erd {
+padding-top: 0px;
+padding-bottom: 90px;
+width: 80%;
+text-align: left;
+background-color: rgb(20, 120, 255);
+color: rgb(0,0,0);
+border-radius: 2%;
+}
+.md {
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 16px;
+}
+#md {
+padding-top: 0px;
+padding-bottom: 90px;
+width: 80%;
+text-align: left;
+background-color: rgb(20, 255, 120);
+color: rgb(0,0,0);
+border-radius: 2%;
+}
+.stat {
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 16px;
+}
+#stat {
+padding-top: 0px;
+padding-bottom: 90px;
+width: 80%;
+text-align: left;
+background-color: rgb(200, 120, 200);
+color: rgb(0,0,0);
+border-radius: 2%;
+}
+p {
+color: rgb(255, 255, 255);
+font-family: arial;
+font-size: 150%;
+font-weight: bolder;
+text-align: center;
+} 
+p1 {
+color: rgb(0,0,0);
+font-family: arial;
+font-size: 50%;
+font-weight: bolder;
+text-align: center;
+} 
+p2 {
+color: rgb(255, 255, 255);
+font-family: arial;
+font-size: 11px;
+font-weight: bolder;
+text-align: center;
+} 
+#banner {
+	font-family: Arial;
+	background-color: rgb(0, 0, 0);
+	padding: 2px 2px 2px 8px;
+}
+#bannerr {
+	font-family: Arial;
+	background-color: rgb(200, 155, 178);
+	padding: 2px 2px 2px 8px;
+	}
+#banner1 {
+			font-family: Arial;
+			background-color: blue;
+			padding: 2px 2px 8px 2px;
+			}
+#button-text{
+font-family: arial;
+position: absolute; top: 35px; right: 25px;
+font-size: 15px;}
+      .dd-btn {
+         padding: 33px;
+         text-align: "left";
+         background-color: "grey";
+         border: "black";
+         border-radius: 50%;
+}
+#lo {
+position: absolute; 
+top: 10px; 
+right: 50px; 
+bottom: 2000px; 
+left: 330px;
+}
+#police {
+position: absolute;
+top: 60px; 
+right: 0px;
+bottom: 0px;
+left: 0px;
+}
+#myCanvas {
+background-color: none;
+margin-top: 50px;
+position: absolute;
+top: 10%;
+right: 5%
+}
+    </style>
+  </head>
+<style type="text/css">
+</style> 
+<script>
+window.onload = function () {
+var canvas = document.getElementById ("myCanvas") ;
+var context = canvas.getContext ("2d") ;
+context.beginPath () ;
+context.moveTo (85, 60) ;
+context.lineTo (85, 40) ;
+context.moveTo (85, 10) ;
+context.lineTo (95, 40) ;
+context.lineTo (75, 40) ;
+context.lineTo (85, 10) ;
+context.fillStyle = "blue" ;
+context.fill () ;
+context.lineWidth = 2 ;
+context.strokeStyle = "black" ;
+context.stroke () ;
+
+context.beginPath () ;
+context.moveTo (75, 110) ;
+context.lineTo (95, 110) ;
+context.lineTo (95, 130) ;
+context.lineTo (75, 130) ;
+context.lineTo (75, 110) ;
+context.fillStyle = "white" ;
+context.fill () ;
+context.lineWidth = 1 ;
+context.strokeStyle = "brown";
+context.stroke() ;
+
+context.beginPath () ;
+context.arc (85, 85, 2, 0, 2*Math.PI);
+context.fillStyle = "white" ;
+context.strokeStyle = "red";
+context.fill ();
+context.stroke ();
+
+var can = document.getElementById ("myCanvas") ;
+var cn = can.getContext ("2d") ;
+var grd = cn.createRadialGradient(0,400,350,300,0, 350);
+grd.addColorStop(0, "black");
+
+cn.fillStyle=grd;
+cn.font="9px Arial";
+cn.fillText("N",82, 8);
+cn.fillText("Police Station", 10, 85);
+cn.fillText("Western Cape", 10, 115);
+cn.fillText("Boundary", 10, 125);
+}
+
+</script>
+<div>
+<center><canvas id="myCanvas" width="100" height="150" style="border: 0.5px dotted black ;">
+</div>
+<body>
+
+<div id="banner1">
+<form action="njabulo.com" onsubmit="return validateForm()">
+<button class="dd-btn" id="lo"></button>
+</form>
+<script>
+      function validateForm()     
+</script>
+<p1 id="button-text">Logout</p1>    
+<p> Police Station</p>  
+<p2 id="police"> Western Cape Policing Service</p2>
+   </div>
+
+    <div id="map">
+      <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+    </div>
+    <p3>Western Cape Police Services Geoportal</p3>
+    <script>
+      const key = 'i39Qg6QqR6C1s4K7BGko';
+      const map = L.map('map').setView([-33.9249, 19.4241], 5.3);
+      const gl = L.maplibreGL({
+        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${key}`
+      }).addTo(map);
+      
+function addMarker(Latitude, Longitude){
+      var marker=L.circle([Latitude, Longitude], 70,{
+title:"tit",
+alt:"al",
+ stroke: true,
+ color: 'red',
+ opacity: 1,
+ weight: 1,
+ fill: true,
+ fillColor: "red",
+ fillOpacity: 0.3,
+clickable:true
+}
+).addTo(map);
+      return marker;
+      }
+
+var polygon = L.polygon([
+[-31.14, 18.72987],
+[-33.07946, 19.434],
+[-33.30946, 19.734],
+[-33.20794, 19.834],
+[-33.10946, 20.934],
+[-32.55946, 21.834],
+[-31.75946, 24.034],
+[-32.05946, 24.134],
+[-32.95946, 23.834],
+[-34.15946, 23.934],
+[-34.25946, 22.934],
+[-34.15946, 22.734],
+[-34.65946, 21.534],
+[-34.25946, 20.734],
+[-34.25946, 20.034],
+[-34.85946, 20.334],
+[-34.95946, 20.234],
+[-34.95946, 19.734],
+[-34.55946, 18.934],
+[-34.35946, 18.934],
+[-34.35946, 18.734],
+[-34.55946, 18.434],
+[-34.05946, 18.234],
+[-33.25946, 18.234],
+[-33.25946, 18.034],
+[-33.15946, 17.634],
+[-31.05946, 18.034]
+], {
+color: 'brown',
+weight:1,
+fillColor: 'none', 
+fillOpacity:1}).addTo(map);
+   
+     addMarker(-32.15174, 18.60647);
+     addMarker(-33.99243, 19.28734);
+     addMarker(-34.53644, 20.04727);
+     addMarker(-34.23493, 19.42919);
+     addMarker(-34.57818, 19.35139);
+     addMarker(-33.96262, 18.46833);
+     addMarker(-34.10872, 18.46663);
+     addMarker(-33.80517, 19.87543);
+     addMarker(-34.11561, 18.86718);
+     addMarker(-33.71148, 18.99406);
+     addMarker(-34.00107, 18.54054);
+     addMarker(-33.09287, 18.03349);
+     addMarker(-33.15359, 18.66466);
+     addMarker(-32.90627, 18.75449);
+     addMarker(-32.47741, 18.53737);
+     addMarker(-32.75816, 18.02407); 
+     addMarker(-32.90673, 18.00228);
+     addMarker(-32.58829, 19.01101);
+     addMarker(-32.17615, 18.89226);
+     addMarker(-31.81174, 18.23678);
+     addMarker(-34.02047, 20.44455);
+     addMarker(-33.98106, 18.68742);
+     addMarker(-33.35093, 18.8727);
+     addMarker(-33.64022, 19.00515);
+     addMarker(-33.28503, 19.14052);
+     addMarker(-34.05193, 18.6693);
+     addMarker(-33.9882, 18.71879);
+     addMarker(-34.15381, 19.01901);
+     addMarker(-34.41859, 19.23623);
+     addMarker(-34.33963, 19.03232);
+     addMarker(-34.4756, 19.89561);
+     addMarker(-34.11592, 18.83286);
+     addMarker(-34.04298, 18.66004);
+     addMarker(-33.86616, 18.97776);
+     addMarker(-33.95012, 18.47228);
+     addMarker(-34.03052, 18.35674);
+     addMarker(-33.7846, 20.12967);
+     addMarker(-34.03161, 18.46485);
+     addMarker(-33.98442, 18.47286);
+     addMarker(-33.18409, 18.99944);
+     addMarker(-33.45354, 18.72971);
+     addMarker(-33.01164, 18.99274);
+     addMarker(-33.00962, 17.93958);
+     addMarker(-34.02464, 18.66599);
+     addMarker(-33.92897, 18.44814);
+     addMarker(-34.15086, 19.92037);
+     addMarker(-34.07682, 18.84466);
+     addMarker(-34.80059, 20.05088);
+     addMarker(-33.92257, 18.85526);
+     addMarker(-33.58986, 22.20401);
+     addMarker(-33.6573, 23.12582);
+     addMarker(-33.49487, 21.2683);
+     addMarker(-34.37743, 21.41184);
+     addMarker(-33.19758, 20.85937);
+     addMarker(-31.96489, 23.76155);
+     addMarker(-33.92774, 18.4231);
+     addMarker(-33.95604, 18.37672);
+     addMarker(-33.92367, 18.48325);
+     addMarker(-33.87562, 18.50175);
+     addMarker(-33.92691, 18.50137);
+     addMarker(-33.90953, 18.51064);
+     addMarker(-33.97502, 18.64209);
+     addMarker(-34.19313, 18.43659);
+     addMarker(-33.93231, 18.6825);
+     addMarker(-33.33927, 20.03179);
+     addMarker(-34.0046, 20.654);
+     addMarker(-33.68464, 19.30908);
+     addMarker(-34.17631, 22.11733);
+     addMarker(-32.77896, 21.97303);
+     addMarker(-34.00341, 22.48547);
+     addMarker(-34.17612, 22.09112);
+     addMarker(-34.05359, 23.32062);
+     addMarker(-33.98272, 22.47327);
+     addMarker(-31.77222, 18.62512);
+     addMarker(-32.09251, 18.30541);
+     addMarker(-33.90553, 18.39946);
+     addMarker(-31.14968, 18.35712);
+     addMarker(-31.6083, 18.74001);
+     addMarker(-33.94692, 18.64877);
+     addMarker(-33.29353, 19.32863);
+     addMarker(-33.47424, 19.66581);
+     addMarker(-33.80679, 18.86272);
+     addMarker(-33.90469, 18.59561);
+     addMarker(-33.90276, 20.72117);
+     addMarker(-33.83361, 20.06699);
+     addMarker(-34.06542, 18.47621);
+     addMarker(-34.01031, 18.60685);
+     addMarker(-34.13289, 18.43492);
+     addMarker(-31.66088, 18.51031);
+     addMarker(-33.92441, 18.56443);
+     addMarker(-31.55902, 18.34501);
+     addMarker(-33.36941, 19.31159);
+     addMarker(-33.93905, 20.09825);
+     addMarker(-33.90888, 18.56195);
+     addMarker(-33.857, 18.7273);
+     addMarker(-33.97497, 18.56331);
+     addMarker(-33.97186, 18.55608);
+     addMarker(-34.04761, 18.62321);
+     addMarker(-33.53339, 21.68666);
+     addMarker(-33.96157, 18.50724);
+     addMarker(-33.94634, 18.57224);
+     addMarker(-33.48874, 22.53451);
+     addMarker(-33.95658, 22.46031);
+     addMarker(-34.03629, 23.05145);
+     addMarker(-34.18145, 22.14066);
+     addMarker(-34.2086, 21.58325);
+     addMarker(-34.05469, 22.21906);
+     addMarker(-34.09338, 21.26123);
+     addMarker(-32.34946, 22.58486);
+     addMarker(-32.77115, 18.15646);
+     addMarker(-33.85506, 18.54346);
+     addMarker(-33.21944, 22.02828);
+     addMarker(-33.4144, 19.20104);
+     addMarker(-33.92226, 18.5973);
+     addMarker(-34.03613, 18.6107);
+     addMarker(-33.9122, 19.12143);
+     addMarker(-33.06525, 18.34998);
+     addMarker(-33.87196, 18.68164);
+     addMarker(-33.93575, 18.85592);
+     addMarker(-33.9463, 19.82949);
+     addMarker(-34.43881, 19.45789);
+     addMarker(-33.82635, 18.4893);
+     addMarker(-33.67287, 18.99789);
+     addMarker(-34.08899, 20.95543);
+     addMarker(-34.05783, 23.37196);
+     addMarker(-34.02196, 22.45031);
+     addMarker(-33.94453, 18.52647);
+     addMarker(-33.99054, 18.50523);
+     addMarker(-33.66565, 18.58239);
+     addMarker(-32.31333, 18.34069);
+     addMarker(-33.64546, 19.44373);
+     addMarker(-34.07212, 18.57684);
+     addMarker(-34.06112, 18.76276);
+     addMarker(-34.14435, 18.34645);
+     addMarker(-33.91541, 18.64655);
+     addMarker(-33.83389, 18.64929);
+     addMarker(-33.572766, 22.433216);
+     addMarker(-34.04481, 19.5628);
+     addMarker(-34.15908, 18.86941);
+     addMarker(-33.72733, 18.4481);
+     addMarker(-33.56479, 18.49318);
+     addMarker(-33.91001, 18.42454);
+     addMarker(-34.00399, 18.46505);
+     addMarker(-34.04863, 18.49523);
+     addMarker(-33.98896, 18.58342);
+     addMarker(-33.73854, 18.96916);
+     addMarker(-33.37637, 18.38199);
+     addMarker(-32.6894, 18.882);
+     addMarker(-34.07219, 18.45524);
+     
+    </script>
+<div class="container" id="cont">
+
+<div id="banner">
+<form action="https://github.com/mthnja014/Login" onsubmit="return validateForm()">
+<div class="cd"><button id="cd">Context Diagram</button></div>
+</form>
+<script>
+      function validateForm()     
+</script>
+
+
+<form action="https://mthnja014.github.io/Data-Flow-Diagram-/" onsubmit="return validateForm()">
+<div class="tldfd"><button id="tldfd">Top Level Data Flow Diagram</button></div>
+</form>
+<script>
+      function validateForm()     
+</script>
+
+<form action="https://mthnja014.github.io/Level-0-data-flow-diagram-/" onsubmit="return validateForm()">
+<div class="lzdfd"><button id="lzdfd">Level Zero Data Flow Diagram</button></div>
+</form>
+<script>
+      function validateForm()     
+</script>
+
+<form action="https://github.com/mthnja014/er-diagram-" onsubmit="return validateForm()">
+<div class="erd"><button id="erd">Entity Relationships Diagram</button></div>
+</form>
+<script>
+      function validateForm()     
+</script>
+
+<form action="https://github.com/mthnja014/Metadata" onsubmit="return validateForm()">
+<div class="md"><button id="md">Metadata Download</button></div>
+</form>
+<script>
+      function validateForm()     
+</script>
+
+<form action="njabulo.com" onsubmit="return validateForm()">
+<div class="stat"><button id="stat">Crime Statistics</button></div>
+</form>
+<script>
+      function validateForm()     
+</script>
+</div>
+<div id="bannerr"><br></br>
+<p1>© Western Cape Justice Service</p1>
+<div/>
+  </body>
+</html>
